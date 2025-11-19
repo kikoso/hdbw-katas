@@ -8,4 +8,8 @@ fun comparePeople(): Boolean {
     return p1 == p2  // should be true
 }
 
-class Person
+data class Person(val name: String, val age: Int)
+
+fun main() {
+    println(comparePeople())
+}
