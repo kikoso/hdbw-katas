@@ -3,8 +3,15 @@ class Invokable {
         private set
 
     operator fun invoke(): Invokable {
-        TODO()
+        numberOfInvocations++
+        println("Current numberOfInvocations value is $numberOfInvocations")
+        return this
     }
 }
 
 fun invokeTwice(invokable: Invokable) = invokable()()
+
+fun main() {
+    invokeTwice(Invokable())
+}
+
