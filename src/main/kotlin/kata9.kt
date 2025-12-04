@@ -15,7 +15,7 @@ data class City(val name: String) {
 }
 
 fun Shop.getSetOfCustomers(): Set<Customer> =
-    TODO()
+    customers.toSet()
 
 
 fun main() {
