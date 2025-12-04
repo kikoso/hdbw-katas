@@ -18,7 +18,7 @@ fun Shop.getSetOfCustomers(): Set<Customer> =
     customers.toSet()
 
 fun Shop.getCustomersSortedByOrder(): List<Customer> =
-    TODO()
+    customers.sortedByDescending { it.orders.size }
 
 fun main() {
     val myShop = Shop("My Shop", emptyList())
