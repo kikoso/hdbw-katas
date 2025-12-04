@@ -17,6 +17,8 @@ data class City(val name: String) {
 fun Shop.getSetOfCustomers(): Set<Customer> =
     customers.toSet()
 
+fun Shop.getCustomersSortedByOrder(): List<Customer> =
+    TODO()
 
 fun main() {
     val myShop = Shop("My Shop", emptyList())
