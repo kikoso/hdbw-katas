@@ -20,6 +20,14 @@ fun Shop.getSetOfCustomers(): Set<Customer> =
 fun Shop.getCustomersSortedByOrder(): List<Customer> =
     customers.sortedByDescending { it.orders.size }
 
+// Find all the different cities the customers are from
+fun Shop.getCustomerCities(): Set<City> =
+    TODO()
+
+// Find the customers living in a given city
+fun Shop.getCustomersFrom(city: City): List<Customer> =
+    TODO()
+
 fun main() {
     val myShop = Shop("My Shop", emptyList())
     myShop.getSetOfCustomers()
